@@ -2,6 +2,8 @@
 
 Official Creative Graphic Design & Marketing Portfolio Showcase of **Muhammed** ([@designwithMdn](https://www.pinterest.com/mohdthoduvayil789/_created/)).
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmohdthoduvayil789-maker%2Fmdn.dot&project-name=mdn-dot&repository-name=mdn-dot)
+
 ## 🌟 Overview
 An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original works across multiple disciplines:
 - 📱 **Social Media Flyers & Event Posters**
@@ -17,8 +19,10 @@ An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original 
 - **Direct Connect Links** for WhatsApp and Pinterest
 - **100% Mobile Responsive & Offline Ready**
 
-## 🚀 Live Deployment
-- **GitHub Pages:** [https://muhammedndm601-coder.github.io/mdn.dot/](https://muhammedndm601-coder.github.io/mdn.dot/)
+## 🌐 Live Deployments
+- ⚡ **Vercel:** [https://mdn-dot.vercel.app](https://mdn-dot.vercel.app)
+- 🐙 **GitHub Pages:** [https://mohdthoduvayil789-maker.github.io/mdn.dot/](https://mohdthoduvayil789-maker.github.io/mdn.dot/)
+- 📦 **GitHub Repository:** [https://github.com/mohdthoduvayil789-maker/mdn.dot](https://github.com/mohdthoduvayil789-maker/mdn.dot)
 
 ---
-&copy; 2026 Muhammed Portfolio. All rights reserved.
+&copy; 2026 Muhammed Portfolio (@designwithMdn). All rights reserved.
