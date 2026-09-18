@@ -1,5 +1,5 @@
 /**
- * MOHD THODUVAYIL (@designwithMdn) — Interactive Showcase Engine
+ * MUHAMMED (@withmdn.dot) — Interactive Showcase Engine
  * Strictly Original Created Works Only
  */
 
@@ -339,7 +339,7 @@ function updateModalContent() {
   
   const descEl = document.getElementById('modalDescription');
   if (descEl) {
-    descEl.textContent = item.Description && item.Description.trim() ? item.Description : `Created by Muhammed (@designwithMdn) under ${catConfig.name}.`;
+    descEl.textContent = item.Description && item.Description.trim() ? item.Description : `Created by Muhammed (@withmdn.dot) under ${catConfig.name}.`;
   }
   
   // Update Pinterest link to original pin
