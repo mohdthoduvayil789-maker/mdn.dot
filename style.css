@@ -1552,11 +1552,350 @@ body {
   color: var(--text-primary);
 }
 
-/* Responsive adjustments */
-@media (max-width: 640px) {
-  .nav-links { display: none; }
-  .nav-prev { left: 0.5rem; width: 40px; height: 40px; }
-  .nav-next { right: 0.5rem; width: 40px; height: 40px; }
-  .floating-dock { bottom: 1rem; right: 1rem; }
-  .filter-hub { top: 58px; padding: 0.85rem; }
+/* ==========================================================================
+   Comprehensive Mobile-First & Responsive System
+   ========================================================================== */
+
+/* Mobile Header Action Button */
+.mobile-header-btn {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-header-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.4rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+}
+
+/* Tablet & Medium Screens (<= 992px) */
+@media (max-width: 992px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+  
+  .hero-section {
+    padding: 3.5rem 0 2.5rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
+/* Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .site-header {
+    padding: 0.6rem 0;
+  }
+
+  .brand-avatar {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+  }
+
+  .brand-name {
+    font-size: 0.95rem;
+  }
+
+  .brand-tag {
+    font-size: 0.72rem;
+  }
+
+  .status-pill {
+    display: none; /* Hide on small mobile to give brand & CTA maximum breathing room */
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding: 2.5rem 0 2rem;
+  }
+
+  .hero-badge {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.76rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 7vw, 2.6rem);
+    line-height: 1.18;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.55rem;
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .hero-actions .btn-gradient {
+    grid-column: span 2;
+    justify-content: center;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.92rem;
+  }
+
+  .hero-actions .btn-instagram,
+  .hero-actions .btn-linkedin,
+  .hero-actions .btn-secondary,
+  .hero-actions .btn-outline {
+    justify-content: center;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-actions .btn-outline {
+    grid-column: span 2;
+  }
+
+  /* Stats Container */
+  .stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    width: 100%;
+    max-width: 440px;
+    padding: 0.85rem;
+    margin-top: 1.25rem;
+    border-radius: 16px;
+  }
+
+  .stat-card {
+    padding: 0.4rem 0.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+  }
+
+  .stat-number {
+    font-size: 1.4rem;
+  }
+
+  .stat-label {
+    font-size: 0.66rem;
+  }
+
+  .stat-divider {
+    display: none !important;
+  }
+
+  /* Filter Hub & Category Hub */
+  .showcase-section {
+    padding: 2rem 0 4rem;
+  }
+
+  .filter-hub {
+    top: 56px;
+    padding: 0.75rem;
+    border-radius: 14px;
+    margin-bottom: 1.75rem;
+  }
+
+  .search-box {
+    margin-bottom: 0.75rem;
+  }
+
+  .search-box input {
+    padding: 0.6rem 2.2rem 0.6rem 2.4rem;
+    font-size: 0.84rem;
+    border-radius: 10px;
+  }
+
+  .category-tabs {
+    padding-bottom: 0.35rem;
+    gap: 0.35rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
+  }
+
+  .tab-btn {
+    padding: 0.32rem 0.7rem;
+    font-size: 0.74rem;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+
+  .tab-count {
+    font-size: 0.65rem;
+    padding: 0.08rem 0.35rem;
+  }
+
+  /* Gallery Grid */
+  .gallery-grid.masonry-layout {
+    column-count: 1;
+    column-gap: 1rem;
+  }
+
+  .gallery-card {
+    margin-bottom: 1.15rem;
+    border-radius: 14px;
+  }
+
+  /* Make Card Overlay permanently accessible on mobile touch */
+  .card-overlay {
+    opacity: 1;
+    background: linear-gradient(180deg, transparent 40%, rgba(7, 9, 14, 0.95) 100%);
+    padding: 0.85rem;
+  }
+
+  .overlay-meta {
+    transform: translateY(0);
+  }
+
+  .overlay-title {
+    font-size: 0.88rem;
+    margin-bottom: 0.15rem;
+  }
+
+  .overlay-category {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .overlay-btn {
+    padding: 0.3rem 0.55rem;
+    font-size: 0.72rem;
+  }
+
+  /* Floating Connect Dock - Mobile Centered Pill */
+  .floating-dock {
+    bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    gap: 0.35rem;
+    padding: 0.28rem 0.4rem;
+    max-width: 95vw;
+    width: auto;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.65);
+    z-index: 50;
+  }
+
+  .dock-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.7rem;
+    gap: 0.25rem;
+  }
+
+  .dock-top {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Lightbox Modal on Mobile */
+  .lightbox-modal {
+    padding: 0;
+  }
+
+  .lightbox-body {
+    padding: 0.5rem;
+    height: 100vh;
+    height: 100dvh;
+    border-radius: 0;
+  }
+
+  .lightbox-img-wrap {
+    height: calc(100% - 130px);
+  }
+
+  .lightbox-nav {
+    width: 38px;
+    height: 38px;
+  }
+
+  .nav-prev { left: 0.4rem; }
+  .nav-next { right: 0.4rem; }
+
+  .lightbox-close {
+    top: 0.65rem;
+    right: 0.65rem;
+    width: 38px;
+    height: 38px;
+  }
+
+  .lightbox-footer {
+    padding: 0.65rem 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .lightbox-caption {
+    max-width: 100%;
+  }
+
+  .caption-title {
+    font-size: 0.95rem;
+  }
+
+  .caption-desc {
+    font-size: 0.78rem;
+    max-height: 48px;
+    overflow-y: auto;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 2.25rem 0 calc(3.5rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.85rem 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra Small Devices (< 420px) */
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-actions .btn-gradient,
+  .hero-actions .btn-instagram,
+  .hero-actions .btn-linkedin,
+  .hero-actions .btn-secondary,
+  .hero-actions .btn-outline {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .dock-btn span {
+    display: none; /* Icon-only floating dock for tiny screens */
+  }
+
+  .dock-btn {
+    padding: 0.45rem;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+  }
 }
