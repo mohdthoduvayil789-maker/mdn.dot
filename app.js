@@ -1,6 +1,6 @@
 /**
- * MUHAMMED (@withmdn.dot) — Interactive Showcase Engine
- * Strictly Original Created Works Only
+ * MUHAMMED (@withmdn.dot) — Mydbucket Style Agency Application Engine
+ * Curated Original Created Works & Interactive Components
  */
 
 let allWorks = [];
@@ -60,7 +60,7 @@ function initBackgroundParallax() {
 }
 
 /**
- * Initialize Portfolio Data from window.PORTFOLIO_DATA or fetch data.json
+ * Initialize Portfolio Data from window.PORTFOLIO_DATA
  */
 async function initPortfolioData() {
   if (window.PORTFOLIO_DATA && Array.isArray(window.PORTFOLIO_DATA)) {
@@ -72,7 +72,7 @@ async function initPortfolioData() {
       allWorks = await res.json();
       renderApp();
     } catch (err) {
-      console.warn('Could not fetch data.json locally, using fallback data', err);
+      console.warn('Could not fetch data.json locally, fallback initialized', err);
     }
   }
 }
@@ -151,11 +151,11 @@ function selectCategory(categoryKey) {
   const categories = window.PORTFOLIO_CATEGORIES || {};
 
   if (categoryKey === 'all') {
-    if (descEl) descEl.textContent = 'Showing all original creative graphic designs created by Mohd Thoduvayil.';
-    if (labelEl) labelEl.textContent = 'All Creations';
+    if (descEl) descEl.textContent = 'Showing all authentic graphic design creations uploaded and handcrafted by Mohd Thoduvayil (@withmdn.dot).';
+    if (labelEl) labelEl.textContent = 'All Work';
   } else {
     const config = categories[categoryKey];
-    if (descEl && config) descEl.textContent = `${config.description} (${config.malayalamName || ''})`;
+    if (descEl && config) descEl.textContent = `${config.description}`;
     if (labelEl && config) labelEl.textContent = config.name;
   }
 
@@ -252,7 +252,7 @@ function renderGallery() {
           <div class="card-overlay">
             <div class="overlay-meta">
               <h4 class="overlay-title">${item.Title}</h4>
-              <p class="overlay-category">Muhammed Original</p>
+              <p class="overlay-category">Muhammed Original Design</p>
               <div class="overlay-actions">
                 <button class="overlay-btn" onclick="event.stopPropagation(); openLightbox(${idx});">
                   <svg class="icon-xs" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
@@ -272,24 +272,43 @@ function renderGallery() {
 }
 
 /**
- * Toggle layout between Masonry and Uniform Grid
+ * FAQ Accordion Toggle
  */
-function setLayout(layoutType) {
-  const gallery = document.getElementById('galleryContainer');
-  const masonryBtn = document.getElementById('viewMasonryBtn');
-  const gridBtn = document.getElementById('viewGridBtn');
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  if (!item) return;
 
-  if (!gallery) return;
+  const isActive = item.classList.contains('active');
+  
+  // Close all other items
+  document.querySelectorAll('.faq-item').forEach(other => {
+    if (other !== item) other.classList.remove('active');
+  });
 
-  if (layoutType === 'masonry') {
-    gallery.className = 'gallery-grid masonry-layout';
-    masonryBtn.classList.add('active');
-    gridBtn.classList.remove('active');
+  // Toggle current item
+  if (isActive) {
+    item.classList.remove('active');
   } else {
-    gallery.className = 'gallery-grid uniform-layout';
-    gridBtn.classList.add('active');
-    masonryBtn.classList.remove('active');
+    item.classList.add('active');
   }
+}
+
+/**
+ * Handle Contact Form Submission & WhatsApp Forwarding
+ */
+function handleFormSubmit(e) {
+  e.preventDefault();
+  
+  const name = document.getElementById('formName').value.trim();
+  const phone = document.getElementById('formPhone').value.trim();
+  const service = document.getElementById('formService').value;
+  const message = document.getElementById('formMessage').value.trim();
+
+  const formattedMsg = `Hi Muhammed! My name is ${name} (${phone}). I am interested in: *${service}*. Details: ${message ? message : 'Looking for a project consultation and timeline estimate.'}`;
+  const whatsappUrl = `https://wa.me/919946381789?text=${encodeURIComponent(formattedMsg)}`;
+
+  showToast('🚀 Forwarding to WhatsApp with your details...');
+  window.open(whatsappUrl, '_blank');
 }
 
 /**
