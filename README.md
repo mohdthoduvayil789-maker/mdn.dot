@@ -1,8 +1,8 @@
-# mdn.dot — Muhammed Portfolio 🎨
+# withmdn.dot — Muhammed Portfolio 🎨
 
 Official Creative Graphic Design & Marketing Portfolio Showcase of **Muhammed** ([@designwithMdn](https://www.pinterest.com/mohdthoduvayil789/_created/)).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmohdthoduvayil789-maker%2Fmdn.dot&project-name=mdn-dot&repository-name=mdn-dot)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmohdthoduvayil789-maker%2Fwithmdn.dot&project-name=withmdn-dot&repository-name=withmdn-dot)
 
 ## 🌟 Overview
 An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original works across multiple disciplines:
@@ -20,15 +20,16 @@ An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original 
 - 📌 **Pinterest:** [@mohdthoduvayil789](https://www.pinterest.com/mohdthoduvayil789/_created/)
 
 ## 🛠️ Features
+- **Floating Designing Tools Ambient Background** (Photoshop, Illustrator, Figma, InDesign, Canva, Vector Pen, Layers, Swatches)
 - **Interactive Filtering & Instant Search** across design categories
 - **Fullscreen Lightbox Viewer** with Zoom In/Out, Pan, and HD image downloads
 - **Direct Connect CTAs** for WhatsApp, Instagram, LinkedIn, and Pinterest
 - **100% Mobile Responsive & Offline Ready**
 
 ## 🌐 Live Deployments
-- ⚡ **Vercel:** [https://mdn-dot.vercel.app](https://mdn-dot.vercel.app)
-- 🐙 **GitHub Pages:** [https://mohdthoduvayil789-maker.github.io/mdn.dot/](https://mohdthoduvayil789-maker.github.io/mdn.dot/)
-- 📦 **GitHub Repository:** [https://github.com/mohdthoduvayil789-maker/mdn.dot](https://github.com/mohdthoduvayil789-maker/mdn.dot)
+- ⚡ **Vercel:** [https://withmdn-dot.vercel.app](https://withmdn-dot.vercel.app)
+- 🐙 **GitHub Pages:** [https://mohdthoduvayil789-maker.github.io/withmdn.dot/](https://mohdthoduvayil789-maker.github.io/withmdn.dot/)
+- 📦 **GitHub Repository:** [https://github.com/mohdthoduvayil789-maker/withmdn.dot](https://github.com/mohdthoduvayil789-maker/withmdn.dot)
 
 ---
 &copy; 2026 Muhammed Portfolio (@designwithMdn). All rights reserved.
