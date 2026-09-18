@@ -101,6 +101,262 @@ body {
   background: radial-gradient(circle, #9333ea 0%, transparent 70%);
 }
 
+/* ==========================================================================
+   Animated Floating Designing Tools Background Layer
+   ========================================================================== */
+.design-tools-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* Subtle Designer Isometric & Blueprint Grid */
+.designer-grid-pattern {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.012) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.012) 1px, transparent 1px);
+  background-size: 36px 36px, 72px 72px, 72px 72px;
+  opacity: 0.65;
+}
+
+/* Floating Tool Elements */
+.tool-float {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.55rem 0.95rem;
+  border-radius: 14px;
+  background: rgba(13, 18, 30, 0.65);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  will-change: transform;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+/* Software Icon Pill */
+.tool-icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.92rem;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.15);
+}
+
+.tool-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tool-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: #fff;
+  letter-spacing: -0.01em;
+}
+
+.tool-category {
+  font-size: 0.62rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* Specific Software Badges */
+.tool-ps {
+  top: 13%;
+  left: 2.5%;
+  border-color: rgba(49, 168, 255, 0.3);
+  animation: floatSlow 8s ease-in-out infinite;
+}
+.tool-ps .tool-icon-box {
+  background: #001e36;
+  color: #31a8ff;
+  border: 1.5px solid #31a8ff;
+  box-shadow: 0 0 16px rgba(49, 168, 255, 0.45);
+}
+
+.tool-ai {
+  top: 22%;
+  right: 3.5%;
+  border-color: rgba(255, 154, 0, 0.3);
+  animation: floatMedium 9s ease-in-out infinite 1s;
+}
+.tool-ai .tool-icon-box {
+  background: #330000;
+  color: #ff9a00;
+  border: 1.5px solid #ff9a00;
+  box-shadow: 0 0 16px rgba(255, 154, 0, 0.45);
+}
+
+.tool-figma {
+  top: 56%;
+  left: 2%;
+  border-color: rgba(162, 89, 255, 0.3);
+  animation: floatReverse 10s ease-in-out infinite 1.5s;
+}
+.tool-figma .tool-icon-box {
+  background: #1a1a24;
+  border: 1.5px solid #a259ff;
+  box-shadow: 0 0 16px rgba(162, 89, 255, 0.45);
+}
+
+.tool-id {
+  top: 72%;
+  right: 2.5%;
+  border-color: rgba(255, 51, 102, 0.3);
+  animation: floatSlow 9.5s ease-in-out infinite 2s;
+}
+.tool-id .tool-icon-box {
+  background: #49021f;
+  color: #ff3366;
+  border: 1.5px solid #ff3366;
+  box-shadow: 0 0 16px rgba(255, 51, 102, 0.45);
+}
+
+.tool-canva {
+  top: 89%;
+  left: 4%;
+  border-color: rgba(0, 196, 204, 0.3);
+  animation: floatMedium 8.5s ease-in-out infinite 0.5s;
+}
+.tool-canva .tool-icon-box {
+  background: #002d33;
+  color: #00c4cc;
+  border: 1.5px solid #00c4cc;
+  box-shadow: 0 0 16px rgba(0, 196, 204, 0.45);
+}
+
+/* Floating Vector & Graphic Tool Glyphs */
+.tool-glyph {
+  position: absolute;
+  padding: 0.65rem;
+  border-radius: 50%;
+  background: rgba(13, 18, 30, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  color: var(--accent-purple-light);
+  will-change: transform;
+}
+
+.glyph-pen {
+  top: 38%;
+  left: 7.5%;
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.35);
+  animation: floatMedium 7.5s ease-in-out infinite 2.5s;
+}
+
+.glyph-layers {
+  top: 42%;
+  right: 5%;
+  color: #c084fc;
+  border-color: rgba(192, 132, 252, 0.35);
+  animation: floatReverse 9s ease-in-out infinite 1s;
+}
+
+.glyph-palette {
+  top: 6%;
+  right: 18%;
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.35);
+  animation: floatSlow 8.5s ease-in-out infinite 3s;
+}
+
+.glyph-wand {
+  top: 68%;
+  left: 10%;
+  color: #f43f5e;
+  border-color: rgba(244, 63, 94, 0.35);
+  animation: floatMedium 10s ease-in-out infinite 1.8s;
+}
+
+.glyph-type {
+  top: 83%;
+  right: 12%;
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.35);
+  animation: floatSlow 8s ease-in-out infinite 2.2s;
+}
+
+/* Keyframe Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(2deg);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-24px) rotate(-3deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(20px) rotate(2.5deg);
+  }
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 900px) {
+  .tool-float {
+    padding: 0.35rem 0.55rem;
+    gap: 0.35rem;
+    border-radius: 9px;
+    opacity: 0.75;
+  }
+  .tool-icon-box {
+    width: 25px;
+    height: 25px;
+    font-size: 0.75rem;
+    border-radius: 6px;
+  }
+  .tool-info {
+    display: none;
+  }
+  .tool-ps { top: 7%; left: 1%; }
+  .tool-ai { top: 15%; right: 1%; }
+  .tool-figma { top: 58%; left: 1%; }
+  .tool-id { top: 75%; right: 1%; }
+  .tool-canva { top: 92%; left: 2%; }
+  .tool-glyph {
+    padding: 0.4rem;
+    opacity: 0.6;
+  }
+  .glyph-pen { top: 30%; left: 1.5%; }
+  .glyph-layers { top: 46%; right: 1.5%; }
+  .glyph-palette { top: 3%; right: 8%; }
+  .glyph-wand { top: 69%; left: 3%; }
+  .glyph-type { top: 86%; right: 4%; }
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;
