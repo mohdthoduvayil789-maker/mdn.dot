@@ -13,10 +13,16 @@ An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original 
 - 💳 **Corporate Business Cards & Stationery**
 - 🕊️ **Conceptual & Thematic Visual Art**
 
+## 🔗 Connect & Socials
+- 📷 **Instagram:** [@withmdn.dot](https://www.instagram.com/withmdn.dot)
+- 💼 **LinkedIn:** [Muhammed Nadapuram](https://www.linkedin.com/in/muhammed-nadapuram-7229aa235)
+- 💬 **WhatsApp:** [+91 9946381789](https://wa.me/919946381789)
+- 📌 **Pinterest:** [@mohdthoduvayil789](https://www.pinterest.com/mohdthoduvayil789/_created/)
+
 ## 🛠️ Features
 - **Interactive Filtering & Instant Search** across design categories
 - **Fullscreen Lightbox Viewer** with Zoom In/Out, Pan, and HD image downloads
-- **Direct Connect Links** for WhatsApp and Pinterest
+- **Direct Connect CTAs** for WhatsApp, Instagram, LinkedIn, and Pinterest
 - **100% Mobile Responsive & Offline Ready**
 
 ## 🌐 Live Deployments
