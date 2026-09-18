@@ -1,11 +1,12 @@
 # withmdn.dot — Muhammed Portfolio 🎨
 
-Official Creative Graphic Design & Marketing Portfolio Showcase of **Muhammed** ([@designwithMdn](https://www.pinterest.com/mohdthoduvayil789/_created/)).
+Official Creative Graphic Design & Marketing Portfolio Showcase of **Muhammed** ([@withmdn.dot](https://www.instagram.com/withmdn.dot)).
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmohdthoduvayil789-maker%2Fwithmdn.dot&project-name=withmdn-dot&repository-name=withmdn-dot)
 
 ## 🌟 Overview
-An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original works across multiple disciplines:
+An interactive, modern, dark-aesthetic digital portfolio showcasing 25 original works across multiple disciplines:
+- 🎯 **Social Media Creatives Handling** (Multy Hands Training Academy Campaigns)
 - 📱 **Social Media Flyers & Event Posters**
 - 📈 **Digital Marketing Creatives & Campaigns**
 - 🍔 **Food & Restaurant Product Advertisements** (Bisa Snacks)
@@ -32,4 +33,4 @@ An interactive, modern, dark-aesthetic digital portfolio showcasing 22 original 
 - 📦 **GitHub Repository:** [https://github.com/mohdthoduvayil789-maker/withmdn.dot](https://github.com/mohdthoduvayil789-maker/withmdn.dot)
 
 ---
-&copy; 2026 Muhammed Portfolio (@designwithMdn). All rights reserved.
+&copy; 2026 Muhammed Portfolio (@withmdn.dot). All rights reserved.

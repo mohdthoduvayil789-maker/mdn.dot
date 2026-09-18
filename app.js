@@ -15,9 +15,10 @@ let startX = 0, startY = 0, translateX = 0, translateY = 0;
 // Category metadata and icon mappings
 const CATEGORY_ICONS = {
   'all': '🌟',
+  'social-media-creatives-handling': '🎯',
+  'marketing': '📈',
   'social-media-flyer': '📱',
   'food-poster': '🍔',
-  'marketing': '📈',
   'visiting-card': '💳',
   'edu': '🎓',
   'the-right-way-the-truth': '🕊️'
@@ -110,6 +111,7 @@ function renderCategoryTabs() {
 
   // Standard ordered board keys present in created works
   const orderedKeys = [
+    'social-media-creatives-handling',
     'marketing',
     'social-media-flyer',
     'food-poster',
