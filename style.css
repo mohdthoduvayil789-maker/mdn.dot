@@ -216,23 +216,25 @@ body {
   gap: 0.65rem;
   padding: 0.62rem 1.4rem;
   border-radius: var(--radius-full);
-  background: #000f2b;
-  color: #ffffff;
+  background: #ffffff;
+  color: #000f2b;
+  border: 1px solid var(--border-light);
   text-decoration: none;
   font-family: var(--font-display);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 16px rgba(0, 15, 43, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   white-space: nowrap;
 }
 
 .btn-agency-quote:hover {
-  background: var(--brand-primary);
-  color: #ffffff;
+  background: #f8fafc;
+  color: #000f2b;
+  border-color: #000f2b;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(4, 90, 255, 0.35);
+  box-shadow: 0 4px 14px rgba(0, 15, 43, 0.08);
 }
 
 .live-dot {
