@@ -289,8 +289,11 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--brand-primary);
-  box-shadow: 0 0 8px var(--brand-primary);
+  background: #00d084;
+  box-shadow: 0 0 8px #00d084;
+  animation: pulseEmerald 2s infinite ease-in-out;
+  display: inline-block;
+  flex-shrink: 0;
 }
 
 .hero-headline {
