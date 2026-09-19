@@ -297,28 +297,10 @@ body {
   font-family: var(--font-display);
   font-size: clamp(2.3rem, 5.4vw, 4.2rem);
   font-weight: 800;
-  line-height: 1.14;
-  letter-spacing: -0.035em;
-  color: var(--text-main);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #000F2B;
   margin-bottom: 1.35rem;
-}
-
-.vibrant-gradient-purple {
-  background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  font-weight: 900;
-  filter: drop-shadow(0 2px 10px rgba(124, 58, 237, 0.2));
-}
-
-.vibrant-gradient-orange {
-  background: linear-gradient(135deg, #FF5722 0%, #F59E0B 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-  font-weight: 900;
-  filter: drop-shadow(0 2px 10px rgba(255, 87, 34, 0.2));
 }
 
 .rotating-word-container {
@@ -332,20 +314,19 @@ body {
   display: inline-block;
 }
 
+.text-vibrant-subtle,
 .text-vibrant-rainbow,
 .text-vibrant-gradient {
-  background: linear-gradient(120deg, #045AFF 0%, #6366F1 22%, #EC4899 48%, #FF5722 75%, #00D084 100%);
-  background-size: 280% auto;
+  background: linear-gradient(135deg, #045AFF 0%, #4F46E5 55%, #06B6D4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: vibrantShimmer 5s ease infinite alternate;
-  font-weight: 900;
   display: inline-block;
-  filter: drop-shadow(0 4px 20px rgba(4, 90, 255, 0.22));
+  font-weight: 800;
+  filter: drop-shadow(0 2px 8px rgba(4, 90, 255, 0.12));
 }
 
 .word-fade-in {
-  animation: wordFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: wordFadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes wordFadeIn {
