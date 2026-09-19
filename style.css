@@ -574,6 +574,12 @@ body {
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.ticker-item.ticker-highlight {
+  color: var(--brand-emerald);
+  font-weight: 800;
 }
 
 .ticker-dot {
