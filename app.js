@@ -28,6 +28,7 @@ const CATEGORY_ICONS = {
 document.addEventListener('DOMContentLoaded', () => {
   initPortfolioData();
   setupEventListeners();
+  initHeroRotatingWords();
   updateFooterYear();
 });
 
@@ -488,3 +489,41 @@ function updateFooterYear() {
   const el = document.getElementById('currentYear');
   if (el) el.textContent = new Date().getFullYear();
 }
+
+/**
+ * Dynamic Rotating Hero Specialties with Vibrant Animated Gradient
+ */
+function initHeroRotatingWords() {
+  const rotatingEl = document.getElementById('rotatingHeroWord');
+  if (!rotatingEl) return;
+
+  const words = [
+    'Social Media Creatives',
+    'Brand Identity & Logos',
+    'Promotional Posters & Flyers',
+    'Company Profiles & Print',
+    'Campaign Visual Systems'
+  ];
+
+  let currentIndex = 0;
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % words.length;
+    
+    // Add exit transition
+    rotatingEl.style.opacity = '0';
+    rotatingEl.style.transform = 'translateY(-10px)';
+    rotatingEl.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+
+    setTimeout(() => {
+      rotatingEl.textContent = words[currentIndex];
+      rotatingEl.classList.remove('word-fade-in');
+      void rotatingEl.offsetWidth; // Trigger reflow
+      rotatingEl.classList.add('word-fade-in');
+      rotatingEl.style.opacity = '1';
+      rotatingEl.style.transform = 'translateY(0)';
+    }, 300);
+
+  }, 3200);
+}
+

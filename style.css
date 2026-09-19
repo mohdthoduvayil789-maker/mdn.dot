@@ -295,18 +295,56 @@ body {
 
 .hero-headline {
   font-family: var(--font-display);
-  font-size: clamp(2.2rem, 5.2vw, 3.8rem);
+  font-size: clamp(2.3rem, 5.4vw, 4.2rem);
   font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -0.03em;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
   color: var(--text-main);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.35rem;
+}
+
+.hero-title-main {
+  background: linear-gradient(135deg, #000F2B 0%, #1A2E5A 60%, #045AFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.rotating-word-container {
+  display: inline-block;
+  vertical-align: bottom;
+  position: relative;
 }
 
 .text-highlight {
-  color: var(--brand-primary);
   position: relative;
   display: inline-block;
+}
+
+.text-vibrant-gradient {
+  background: linear-gradient(120deg, #045AFF 0%, #6366F1 22%, #EC4899 48%, #FF5722 75%, #00D084 100%);
+  background-size: 280% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: vibrantShimmer 6s ease infinite alternate;
+  font-weight: 900;
+  display: inline-block;
+  filter: drop-shadow(0 4px 20px rgba(4, 90, 255, 0.22));
+}
+
+.word-fade-in {
+  animation: wordFadeIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes wordFadeIn {
+  0% { opacity: 0; transform: translateY(14px); filter: blur(4px); }
+  100% { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes vibrantShimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .hero-desc {
