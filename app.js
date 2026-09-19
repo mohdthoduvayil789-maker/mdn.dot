@@ -29,35 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPortfolioData();
   setupEventListeners();
   updateFooterYear();
-  initBackgroundParallax();
 });
-
-/**
- * Subtle Background Design Tools Parallax
- */
-function initBackgroundParallax() {
-  const tools = document.querySelectorAll('.tool-float, .tool-glyph');
-  if (!tools.length || window.innerWidth < 900) return;
-
-  let ticking = false;
-  window.addEventListener('mousemove', (e) => {
-    if (!ticking) {
-      window.requestAnimationFrame(() => {
-        const mouseX = (e.clientX / window.innerWidth) - 0.5;
-        const mouseY = (e.clientY / window.innerHeight) - 0.5;
-
-        tools.forEach((tool, index) => {
-          const speed = ((index % 4) + 1) * 7;
-          const x = mouseX * speed;
-          const y = mouseY * speed;
-          tool.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-        });
-        ticking = false;
-      });
-      ticking = true;
-    }
-  }, { passive: true });
-}
 
 /**
  * Initialize Portfolio Data from window.PORTFOLIO_DATA
