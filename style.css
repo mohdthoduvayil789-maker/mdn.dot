@@ -303,6 +303,22 @@ body {
   margin-bottom: 1.35rem;
 }
 
+.headline-vibrant-indigo {
+  background: linear-gradient(135deg, #4338CA 0%, #6366F1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}
+
+.headline-vibrant-teal {
+  background: linear-gradient(135deg, #0284C7 0%, #0D9488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}
+
 .rotating-word-container {
   display: inline-block;
   vertical-align: bottom;
