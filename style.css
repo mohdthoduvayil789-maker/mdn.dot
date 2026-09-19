@@ -360,29 +360,30 @@ body {
   box-shadow: 0 8px 30px rgba(4, 90, 255, 0.45);
 }
 
-.btn-agency-whatsapp {
-  background: #25d366;
-  color: #ffffff;
-  box-shadow: 0 6px 24px rgba(37, 211, 102, 0.3);
-}
-
-.btn-agency-whatsapp:hover {
-  background: #1eb956;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(37, 211, 102, 0.45);
-}
-
+.btn-agency-whatsapp,
 .btn-agency-outline {
   background: #ffffff;
   color: var(--text-main);
-  border-color: var(--border-light);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
+.btn-agency-whatsapp:hover,
 .btn-agency-outline:hover {
-  background: var(--bg-soft-gray);
+  background: #f8fafc;
   border-color: var(--text-main);
+  color: var(--text-main);
   transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 15, 43, 0.08);
+}
+
+.btn-agency-whatsapp svg {
+  color: #25d366;
+  transition: transform 0.2s ease;
+}
+
+.btn-agency-whatsapp:hover svg {
+  transform: scale(1.1);
 }
 
 .btn-sm {
